@@ -1,0 +1,19 @@
+@mixin radius($value){
+	-webkit-border-radius:$value;
+	-moz-border-radius:$value;
+	border-radius:$value;
+}
+%textBody{
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: 100;
+  	margin: 8px;
+}
+%display-flex{
+	display: flex;
+}
+@mixin flex($flowValue,$justValue){
+	@extend %display-flex;
+	flex-flow: $flowValue;
+	justify-content:$justValue;
+}

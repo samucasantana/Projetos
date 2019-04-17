@@ -1,0 +1,99 @@
+@import "resets.scss";
+@import "menu.scss";
+@import "button.scss";
+@import "pallete_color.scss";
+@import "progressBar.scss";
+@import "mixins_placeholder.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto');
+$font-tituto:'Open Sans', sans-serif;
+$font-body:'Roboto', sans-serif;
+body{
+	background-color: $color-primary-0;
+}
+.view{ 
+ 	height: 100vh;
+ 	font-family:$font-body; 
+ 	color:white;
+}
+.h1-titulo{
+	@extend %textBody;
+}
+.h1-jumbo{
+	font-size: 3rem;
+	font-family:$font-tituto; 
+	font-weight: 500;
+	color:$color-secondary-1-4;
+}
+.view--paragraph{
+	@extend %textBody;
+	color:white;
+}
+.paragraph{
+	color:$color-primary-3;
+	@extend %textBody;
+}
+.texto-secundario{
+    @extend %textBody;
+}
+.text-container{
+  align-items: center !important;
+  column-gap: 1rem;
+  @include flex(column wrap, center !important);
+}
+.align-flex-end{
+	margin-top: 8px;
+	align-items: flex-end;
+	@include flex(column wrap, none);
+}
+hr{
+	border: 0.5spx solid #fff;
+	width: 20%;
+}
+.container{padding-top: 5%;}
+
+img{
+  	margin: 8px;
+	width: 100px;
+	@include radius(50%);
+	border: 1px solid #000;
+	cursor: pointer;
+	animation-name: MoveImg;
+	animation-duration: 0.5s;
+}
+.carding{
+	@include radius(15px);
+	margin:1rem;
+	height: 70vh;
+	overflow: hidden;
+}
+#cardingQuemSou{
+	background: whitesmoke;
+	-webkit-box-shadow: 6px -7px 8px -6px rgba(181,170,181,1);
+	-moz-box-shadow: 6px -7px 8px -6px rgba(181,170,181,1);
+	box-shadow:6px -7px 8px -6px rgba(181,170,181,1);
+}
+#habilidades{
+	height: 98vh !important;
+	box-shadow: none;
+	background:none;
+}
+.wrapper-icons{
+	@include flex(row wrap, space-around);
+}
+@media  only screen and (max-width:768px){
+
+  .carding{
+  	height: 80vh;
+  }
+
+  img{width:30%;}
+  
+  .container{padding-top: 10%;}
+  
+  p{font-size: 1.2rem;}
+  
+  hr{ width: 40%;}
+  //.view-ghost--a{width: 6vh;}
+}
+
+

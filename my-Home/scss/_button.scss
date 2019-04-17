@@ -1,0 +1,52 @@
+@import "pallete_color.scss";
+@import "mixins_placeholder.scss";
+.view-ghost--a{
+  padding: 8px;
+  width: 15vh; 
+  background-color: transparent;
+  text-align: center;
+  border:1px solid;
+  @include radius(4px);
+  font-weight: 100;
+  color:white;
+  margin: 8px;
+  cursor: pointer;
+}
+.btn{
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.view-ghost--a:hover{
+  border: 1px solid #fff;
+  background: rgba(0,0,0,0.4)
+}
+.fab {
+  cursor:pointer;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+  font-size: 1.6rem;
+  transition: transform .2s/*ANIMAÇÃO*/
+}
+.fab:hover{
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.container-img, .view-container-ghost-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons{
+  //-moz-border-radius:50%;
+  ///-webkit-border-radius:50%;
+  //border-radius:50%;
+  color:#aea8d3;
+  //padding: 7px 10px;
+  font-size: 2rem;
+}
+
+
+
+
