@@ -8,7 +8,7 @@
 $font-tituto:'Open Sans', sans-serif;
 $font-body:'Roboto', sans-serif;
 body{
-	background-color: $color-primary-0;
+	background-color: $color-primary-1;
 }
 .view{ 
  	height: 100vh;
@@ -65,17 +65,12 @@ img{
 	margin:1rem;
 	height: 70vh;
 	overflow: hidden;
-}
-#cardingQuemSou{
-	background: whitesmoke;
-	-webkit-box-shadow: 6px -7px 8px -6px rgba(181,170,181,1);
-	-moz-box-shadow: 6px -7px 8px -6px rgba(181,170,181,1);
-	box-shadow:6px -7px 8px -6px rgba(181,170,181,1);
+	-webkit-box-shadow: 2px 0px 29px -18px rgba(122,122,122,1);
+	-moz-box-shadow: 2px 0px 29px -18px rgba(122,122,122,1);
+	box-shadow: 2px 0px 29px -18px rgba(122,122,122,1);
 }
 #habilidades{
 	height: 98vh !important;
-	box-shadow: none;
-	background:none;
 }
 .wrapper-icons{
 	@include flex(row wrap, space-around);
@@ -93,7 +88,6 @@ img{
   p{font-size: 1.2rem;}
   
   hr{ width: 40%;}
-  //.view-ghost--a{width: 6vh;}
 }
 
 
