@@ -1,5 +1,8 @@
 @import "pallete_color.scss";
 @import "mixins_placeholder.scss";
+.icon-sm{
+	display: none !important;
+}
 .sidebar{
   position:fixed;
   width: 100%;
@@ -39,45 +42,81 @@
   transition: .4s;
   font-size:2rem;
 }
+.sidebar .fab{
+  display: none;
+  margin-top: 1%;
+  color:#333;
+  position:absolute;
+  left:31px;
+  top:10px;
+  cursor:pointer;
+  transition: .4s;
+  font-size:2rem;
+}
 @media only screen and (max-width: 600px) {
 	.sidebar{
-		position:fixed;
-		width:200px;
-		height:100%;
-		left:-200px;
-		z-index: 1;
-		background-color:rgba(46, 49, 49,0.4);
+	  position:fixed;
+	  width:86%;
+	  height:100%;
+	  left:-90vh;
+	  z-index: 1;
+	  background-color:$color-primary-1;
+	  .brand{
+	  	color:$color-secondary-1-4 !important;
+  		position:absolute;
+  		width: 15vh;
+  		text-align: center;
+  		background:$color-active;
+  		@include radius(25px);
+	  }
 	}
 	.menu_nav{
-		flex-flow: column;
+	  flex-flow: column;
 	}
 	.item_nav{
+		margin: 1rem;
 		flex-basis: 50px;
-		border-bottom: 1px solid rgba(100,100,100,0.3);
+	  	a{
+	  		color:$color-primary-4;
+	  		&:hover{
+	  			padding: .8rem;
+	  			background:$color-primary-2;
+  				@include radius(25px);
+	  		}
+	  	}
 	}
 	.sidebar.active{
-		left:0px;
+	  left:0px;
 	}
 	.footer-fixed{
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		height: 5%;
-		width: 100%;
-		@include radius(15px 15px 0 0);
-		background-color:$color-primary-2;
-		border-top: 1px solid $color-primary-3;
-		}
+	  position: fixed;
+	  bottom: 0;
+	  left: 0;
+	  height: 5%;
+	  width: 100%;
+	  @include radius(15px 15px 0 0);
+	  background-color:$color-primary-2;
+	  border-top: 1px solid $color-primary-3;
+	 -webkit-box-shadow: 0px -2px 3px -1px rgba(204,200,204,1);
+-moz-box-shadow: 0px -2px 3px -1px rgba(204,200,204,1);
+box-shadow: 0px -2px 3px -1px rgba(204,200,204,1);
+	  }
 	.icon-menu{
-		font-size: 1.6rem;
-		font-weight: 100;
-		margin:1rem;
-		position:absolute;
-		right:31px;
-		cursor:pointer;
-		transition: .4s;
+	  font-size: 1.6rem;
+	  font-weight: 100;
+	  margin:1rem;
+	  position:absolute;
+	  right:5px;
+	  cursor:pointer;
+	  transition: .4s;
 	}
-	.sidebar .brand{
-		display: none;
+	.icon-sm{
+		display: inline !important;
+		color:$color-active;
+		margin:.8rem;
 	}
+	.menu_nav{
+		margin-top: 15%;
+	}
+	
 }
