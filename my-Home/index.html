@@ -1,165 +1,277 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Samuca Santana</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Portifolio">
-  <meta name="keywords" content="HTML,CSS,SASS,JavaScript,PHP">
-  <meta name="author" content="Bruce Wayne">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-  <div class="view" style="background-image: url(img/jonathan-riley-118591-unsplash1.jpg);
-  background-position: center center;background-repeat: repeat; background-size:cover;">
-    <nav class="sidebar">
-      <a class="brand">Sm</a>
-      <i class="fas fa-bars fab" id="fab_menu"></i>
-        <ul class="menu_nav">
-          <li class="item_nav"><a class="nav_link" href="#QuemSou"><i class="fas fa-user-astronaut icon-sm"></i>Quem Sou</a></li>
-          <li class="item_nav"><a class="nav_link" href="#habilidades"><i class="fas fa-brain icon-sm"></i>Habilidades</a></li>
-          <li class="item_nav"><a class="nav_link" href="#IE"><i class="far fa-heart icon-sm"></i>Inteligencia Emocional</a></li>
-          <li class="item_nav"><a class="nav_link" href=""><i class="fas fa-hammer icon-sm"></i>Portifolio</a></li>
-          <li class="item_nav"><a class="nav_link" href=""><i class="fas fa-envelope icon-sm"></i>Contato</a></li>
-        </ul>
-    </nav>
-  	<div class="container">
-  			<div class="container-img">
-  				<img  class="hvr-buzz-out" src="img/IMG_20190317_214401_746.jpg">
-  			</div>
-  		<h1 class="h1-titulo">Samuel Santana</h1>
-      <main>
-        <center>
-          <hr>
-          <p class="view--paragraph"> Cursando Analise de Sistemas na Fatec Ferraz de Vasconcelos.</p>
-          <hr>
-        </center>
-      </main>		
-  			<!--buttons LINKS-->
-      <div class="view-container-ghost-button">
-        <a class="view-ghost--a"><i class="fab fa-github"></i></a>
-        <a class="view-ghost--a"><i class="fab fa-codepen"></i></a>
-        <a class="view-ghost--a"><i class="fab fa-linkedin-in"></i></a>
-        <a class="view-ghost--a"><i class="fab fa-facebook-f"></i></a>
-      </div>
-      <div class="container">
-        <div class="rol">
-          <div class="col-xs-12">
-            <a class="btn btn-outline-light view--paragraph" href="#QuemSou">Descubra mais sobre Samuel...</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card carding" id="cardingQuemSou">
-    <div class="container" id="QuemSou">
-      <div class="row">
-        <div class="col-12 text-center mb-5">
-          <div class="text-container">
-            <div class="container-img">
-                <img  class="hvr-buzz-out"  src="img/IMG_20190313_233147_121.jpg">
-            </div>
-          </div>
-          <h1 class="display-5 h1-jumbo">Sobre mim</h1>
-          <small>Eu sou um criativo web designer e programador</small>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-            <p class="texto-secundario">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               consequat. </p>
-        </div>
-      </div>
-    </div>
-  </div> 
-  <div class="container"><!-- section coisas que eu faço INICIO -->
-    <div class="row">
-      <div class="col"><h1 class="h1-jumbo">Coisas Que eu faço</h1></div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="wrapper-icons">
-          <i class="fas fa-code icons"></i>
-          <i class="fas fa-palette icons"></i>
-          <i class="fas fa-brain icons"></i>
-          <i class="fas fa-mobile icons"></i>
-        </div>
-        <div class="wrapper-icons">
-          <small class="paragraph">Code</small>
-          <small class="paragraph">Design</small>
-          <small class="paragraph">Ideias</small>
-          <small class="paragraph">Apps</small>
-        </div>
-      </div>
-    </div>
-    <center><hr></center>
-  </div><!-- section coisas que eu faço FIM -->
-  <div class="card carding" id="habilidades">
-    <div class="container"><!-- section HABILIDADES INICIO -->
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="h1-jumbo">Habilidades</h1>
-          <hr>
-          <small class="texto-secundario text-muted">Minhas principais Habilidades</small>
 
+<head>
+    <title>Samuca Santana</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portifolio">
+    <meta name="keywords" content="HTML,CSS,SASS,JavaScript,PHP">
+    <meta name="author" content="Bruce Wayne">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="view" style="background-image: url(img/jonathan-riley-118591-unsplash1.jpg);
+  background-position: center center;background-repeat: repeat; background-size:cover;">
+        <nav class="sidebar">
+            <a class="brand">Sm</a>
+            <i class="fas fa-bars fab" id="fab_menu"></i>
+            <ul class="menu_nav">
+                <li class="item_nav">
+                    <a class="nav_link" href="#QuemSou">
+                        <i class="fas fa-user-astronaut icon-sm"></i>Quem Sou
+                    </a>
+                </li>
+                <li class="item_nav">
+                    <a class="nav_link" href="#habilidades">
+                        <i class="fas fa-brain icon-sm"></i>Habilidades
+                    </a>
+                </li>
+                <li class="item_nav">
+                    <a class="nav_link" href="#IE">
+                        <i class="far fa-heart icon-sm"></i>Inteligencia Emocional
+                    </a>
+                </li>
+                <li class="item_nav">
+                    <a class="nav_link" href="#Portifolio">
+                        <i class="fas fa-hammer icon-sm"></i>Portifolio
+                    </a>
+                </li>
+                <li class="item_nav">
+                    <a class="nav_link" href="#Contato">
+                        <i class="fas fa-envelope icon-sm"></i>Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="container-img">
+                <img class="hvr-buzz-out" src="img/IMG_20190317_214401_746.jpg">
+            </div>
+            <h1 class="h1-titulo">Samuel Santana</h1>
+            <main>
+                <center>
+                    <hr>
+                    <p class="view--paragraph">Programador de mentes e Máquina</p>
+                    <hr>
+                </center>
+            </main>
+            <!--buttons LINKS-->
+            <div class="view-container-ghost-button">
+                <a class="view-ghost--a"><i class="fab fa-github"></i></a>
+                <a class="view-ghost--a"><i class="fab fa-codepen"></i></a>
+                <a class="view-ghost--a"><i class="fab fa-linkedin-in"></i></a>
+                <a class="view-ghost--a"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="container">
+                <div class="rol">
+                    <div class="col-xs-12">
+                        <a class="btn btn-outline-light view--paragraph" href="#QuemSou">ver mais...</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <ul class="skill">
-          <li>
-            <h3>CSS</h3>
-            <progress value="90" max="100"></progress>
-          </li>
-          <li>
-            <h3>JavaScript</h3>
-            <progress value="65" max="100"></progress>
-          </li>
-          <li>
-            <h3>HTML</h3>
-            <progress value="80" max="100"></progress>
-          </li>
-          <li>
-            <h3>UX & UI</h3>
-            <progress value="75" max="100"></progress>
-          </li>
-          <li>
-            <h3>PHP</h3>
-            <progress value="70" max="100"></progress>
-          </li>
-          <li>
-            <h3>Design</h3>
-            <progress value="78" max="100"></progress>
-          </li>
-          <li>
-            <h3>Photoshop</h3>
-            <progress value="50" max="100"></progress>
-          </li>
-        </ul>
-      </div>
     </div>
-  </div><!-- section HABILIDADES FIM -->
-  <center><hr></center>
-  <div class="card carding" id="IE">
-    <div class="container"><!-- section IE INICIO -->
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="h1-jumbo">Habilidades Sociais</h1>
-          <hr>
+    <div class="card carding" id="cardingQuemSou">
+        <div class="container" id="QuemSou">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="text-container">
+                        <div class="container-img">
+                            <img class="hvr-buzz-out" src="img/IMG_20190313_233147_121.jpg">
+                        </div>
+                    </div>
+                    <h1 class="display-5 h1-jumbo">Sobre mim</h1>
+                    <small>Eu sou um criativo web designer e programador</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="texto-secundario">Programador Front-End que gosta de PHP, estudante de UX & UI, com experiência de trabalho em Design gráfico.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <footer class="footer-fixed">
-    <i class="fas fa-bars icon-menu"></i>
-  </footer>
+    <div class="container">
+        <!-- section coisas que eu faço INICIO -->
+        <div class="row">
+            <div class="col">
+                <h1 class="h1-jumbo">Coisas Que eu faço</h1></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="wrapper-icons">
+                    <i class="fas fa-code icons"></i>
+                    <i class="fas fa-palette icons"></i>
+                    <i class="fas fa-brain icons"></i>
+                    <i class="fas fa-mobile icons"></i>
+                </div>
+                <div class="wrapper-icons">
+                    <small class="paragraph">Code</small>
+                    <small class="paragraph">Design</small>
+                    <small class="paragraph">Ideias</small>
+                    <small class="paragraph">Apps</small>
+                </div>
+            </div>
+        </div>
+        <center>
+            <hr>
+        </center>
+    </div>
+    <!-- section coisas que eu faço FIM -->
+    <div class="card carding" id="habilidades">
+        <div class="container">
+            <!-- section HABILIDADES INICIO -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h1-jumbo">Habilidades</h1>
+                    <hr>
+                    <small class="texto-secundario text-muted">Minhas principais Habilidades</small>
+
+                </div>
+            </div>
+            <div class="row">
+                <ul class="skill">
+                    <li>
+                        <h3>CSS</h3>
+                        <small class="text-muted">Nível júnior</small>
+                        <progress value="100" max="100"></progress>
+                    </li>
+                    <li>
+                        <h3>JavaScript</h3>
+                        <small  class="text-muted">Nível intermediário</small>
+                        <progress value="65" max="100"></progress>
+                    </li>
+                    <li>
+                        <h3>HTML</h3>
+                        <small  class="text-muted">Nível intermediário</small>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <h3>UX & UI</h3>
+                        <small  class="text-muted">Nível júnior</small>
+                        <progress value="75" max="100"></progress>
+                    </li>
+                    <li>
+                        <h3>PHP</h3>
+                        <small  class="text-muted">intermediário</small>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <h3>Design</h3>
+                        <small  class="text-muted">Nível júnior</small>
+                        <progress value="78" max="100"></progress>
+                    </li>
+                    <li>
+                        <h3>Photoshop</h3>
+                        <small  class="text-muted">Nível júnior</small>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- section HABILIDADES FIM -->
+    <center>
+        <hr>
+    </center>
+    <div class="card carding" id="IE">
+        <div class="container">
+            <!-- section IE INICIO -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h1-jumbo">Habilidades Sociais</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="colum">
+                <div class="col">
+                    <h3>Proativo</h3>
+                    <p class="text-muted">relacionado ao ato de evitar ou resolver um provável problema antes mesmo que ele aconteça</p>
+                </div>
+                <div class="col">
+                    <h3>Automotivação</h3>
+                    <p class="text-muted">nada mais é do que persistir e se manter otimista mesmo diante de problemas;</p>
+                </div>
+                <div class="col">
+                    <h3>Empatia</h3>
+                    <p class="text-muted">habilidade de se colocar no lugar da outra pessoa</p>
+                </div>
+                <div class="col">
+                    <h3>Trabalho em equipe</h3>
+                    <p class="text-muted">Habilidade de saber a hora de ouvir e falar,trabalhar para o crescimento da equipe</p>
+                </div>
+                <div class="col">
+                    <h3>Autoconhecimento</h3>
+                    <p class="text-muted">conseguir reconhecer seus próprios sentimentos e tomar decisões que te fazem bem</p>
+                </div>
+                <div class="col">
+                    <h3>Relacionamento Interpessoal</h3>
+                    <p class="text-muted">Capacidade de se relacionar com um ou mais indivíduos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card carding" id="Portifolio">
+        <div class="container">
+            <!-- section PORTIFOLIO INICIO -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h1-jumbo">Portfólio</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="column">
+                <div class="col"><h3>Estou Trabalhando nisso </h3></div>
+                <div class="col">
+                    <div class="giphy">
+                        <iframe src="https://giphy.com/embed/a9d3bbcM3ImXe" width="50%" height="50%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen>
+                        </iframe>
+                    </div>
+                    <p>
+                        <a href="https://giphy.com/gifs/kermit-bluestaplestudios-a9d3bbcM3ImXe">via GIPHY</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card carding" id="Contato">
+        <div class="container">
+            <!-- section CONTATO INICIO -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h1-jumbo">Contato</h1>
+                    <hr>
+                    <h3>Chega Mais !!! vamos trocar uma ideia</h3>
+                </div>
+            </div>
+            <div class="column">
+                <div class="col">
+                    <i class="fab fa-github icons"></i>
+                    <p class="text-muted">Username Turan-98 </p>
+                    <a href="https://github.com/turan-98" target="_blank"></a>
+                </div>
+                <div class="col">
+                    <i class="fab fa-telegram icons"></i>
+                    <p class="text-muted">me chama la +55 (11) 96392-7804 </p>
+                </div>
+                <div class="col">
+                    <i class="fab fa-codepen icons"></i>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-fixed">
+        <i class="fas fa-bars icon-menu"></i>
+    </footer>
 </body>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="application/javascript" src="js/script.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </html>
