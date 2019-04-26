@@ -69,6 +69,9 @@
   		background:$color-active;
   		@include radius(25px);
 	  }
+	  &:hover{
+	  	background:$color-primary-2;
+	  }
 	}
 	.menu_nav{
 	  flex-flow: column;
@@ -79,8 +82,9 @@
 	  	a{
 	  		color:$color-primary-4;
 	  		&:hover{
+	  			color:$color-primary-2;
 	  			padding: .8rem;
-	  			background:$color-primary-2;
+	  			background:$color-black-theme;
   				@include radius(25px);
 	  		}
 	  	}
@@ -98,8 +102,8 @@
 	  background-color:$color-primary-2;
 	  border-top: 1px solid $color-primary-3;
 	 -webkit-box-shadow: 0px -2px 3px -1px rgba(204,200,204,1);
--moz-box-shadow: 0px -2px 3px -1px rgba(204,200,204,1);
-box-shadow: 0px -2px 3px -1px rgba(204,200,204,1);
+	 -moz-box-shadow: 0px -2px 3px -1px rgba(204,200,204,1);
+          box-shadow: 0px -2px 3px -1px rgba(204,200,204,1);
 	  }
 	.icon-menu{
 	  font-size: 1.6rem;
