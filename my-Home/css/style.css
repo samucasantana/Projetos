@@ -307,7 +307,9 @@ hr {
 
 .container {
   padding-top: 5%; }
-
+p{
+  font-size: 1.6rem;
+}
 img {
   margin: 8px;
   width: 100px;
@@ -324,14 +326,11 @@ img {
   -moz-border-radius: 15px;
   border-radius: 15px;
   margin: 1rem;
-  height: 70vh;
+  height: 100vh;
   overflow: auto;
   -webkit-box-shadow: 2px 0px 29px -18px #7a7a7a;
   -moz-box-shadow: 2px 0px 29px -18px #7a7a7a;
   box-shadow: 2px 0px 29px -18px #7a7a7a; }
-
-#habilidades {
-  height: 98vh !important; }
 
 .wrapper-icons {
   flex-flow: row wrap;
@@ -346,6 +345,10 @@ img {
   height: 0;
   padding-bottom: 100%;
   position: relative; }
+
+  iframe{
+    height: 50%;
+  }
 
 @media only screen and (max-width: 768px) {
   .carding {
