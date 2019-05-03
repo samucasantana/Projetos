@@ -1,6 +1,6 @@
-/*
-const $fas = document.querySelector('.fab')
-const $close = document.querySelector('#close_btn')
+
+const $fas = document.querySelector('.open_menu')
+const $close = document.querySelector('.close_menu')
 const $sidebar = document.querySelector('.sidebar')
 $fas.addEventListener('click',function(){
     $sidebar.classList.add('active')
@@ -8,7 +8,7 @@ $fas.addEventListener('click',function(){
 $close.addEventListener('click',function(){
     $sidebar.classList.remove('active')
 })
-*/
+/*
 function main(){
   $('.container').hide();
   $('.container').fadeIn(1000);
@@ -20,4 +20,4 @@ function main(){
   })
 }
 $(document).ready(main);
-  
+*/
