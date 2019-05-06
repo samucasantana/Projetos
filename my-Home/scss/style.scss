@@ -9,7 +9,7 @@
 $font-tituto:'Open Sans', sans-serif;
 $font-body:'Roboto', sans-serif;
 body{
-	background-color:$color-secondary-1-1;
+	background-color:$color-primary-0;
 }
 .view{ 
  	height: 100vh;
@@ -32,9 +32,6 @@ body{
 .paragraph{
 	color:$color-secondary-2-4;
 	@extend %textBody;
-}
-.texto-secundario{
-    @extend %textBody;
 }
 .text-container{
   align-items: center !important;
@@ -59,6 +56,9 @@ img{
 	animation-name: MoveImg;
 	animation-duration: 0.5s;
 }
+#QuemSou-Imagem{
+    @include radius(50%);
+}
 p{
   font-size: 1.6rem;
 }
@@ -76,12 +76,27 @@ p{
 .wrapper-icons{
 	@include flex(row wrap, space-around);
 }
-.colum{
-	display: flex;
-	flex-flow: column wrap;
+.flex-row{
+    display: flex;
+	flex-flow: row wrap;
 }
 .giphy{
 	width:100%;height:0;padding-bottom:30%;position:relative;
+}
+.colum-around{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 1rem;
+    
+}
+.round-profi{
+    padding: .5rem;
+    background: $color-active;
+    @include radius(15px);
+    font-size: 1.4rem;
+    color:$color-primary-2;
+    margin: .8rem;
 }
 @media  only screen and (max-width:768px){
 
@@ -107,4 +122,6 @@ p{
   .giphy{
 	width:100%;height:0;padding-bottom:100%;position:relative;
     }
+
+
 }
