@@ -16,11 +16,11 @@
     <div class="view">
         <nav class="sidebar">
             <div class="close_btn">
-                <i class="fas fa-times icon-sm-close" id="close_btn"></i>
+                <i class="fas fa-times icon-sm-close close_menu"></i>
             </div>     
             <ul class="menu_nav">
                 <li class="item_nav">
-                    <a class="nav_link" href="#QuemSou">
+                    <a class="link-active nav_link" href="#QuemSou">
                         <i class="fas fa-user-astronaut icon-sm"></i>Quem Sou
                     </a>
                 </li>
@@ -30,8 +30,8 @@
                     </a>
                 </li>
                 <li class="item_nav">
-                    <a class="nav_link" href="#IE">
-                        <i class="far fa-heart icon-sm"></i>Social
+                    <a class="nav_link" href="#Proficiencia">
+                        <i class="far fa-heart icon-sm"></i>Proficiência
                     </a>
                 </li>
                 <li class="item_nav">
@@ -80,16 +80,16 @@
                 <div class="col-12 text-center mb-5">
                     <div class="text-container">
                         <div class="container-img">
-                            <img class="hvr-buzz-out" src="img/IMG_20190313_233147_121-min.jpg">
+                            <img class="hvr-buzz-out" src="img/IMG_20190313_233147_121-min.jpg" id="QuemSou-Imagem">
                         </div>
                     </div>
                     <h1 class="display-5 h1-jumbo">Sobre mim</h1>
-                    <small>Eu sou um criativo web designer e programador</small>
+                    <small class="paragraph">Eu sou um criativo web designer e programador</small>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="texto-secundario">Programador Front-End que gosta de PHP, estudante de UX & UI, com experiência de trabalho em Design gráfico.</p>
+                    <p class="paragraph">Programador Front-End que gosta de PHP, estudante de UX & UI, com experiência de trabalho em Design gráfico.</p>
                 </div>
             </div>
         </div>
@@ -170,40 +170,33 @@
     <center>
         <hr>
     </center>
-    <div class="card carding" id="IE">
+    <div class="card carding" id="Proficiencia">
         <div class="container">
             <!-- section IE INICIO -->
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="h1-jumbo">Habilidades Sociais</h1>
+                    <h1 class="h1-jumbo">Proficiência</h1>
                     <hr>
                 </div>
             </div>
-            <div class="colum">
-                <div class="col">
-                    <h3>Proativo</h3>
-                    <p class="text-muted">relacionado ao ato de evitar ou resolver um provável problema antes mesmo que ele aconteça</p>
-                </div>
-                <div class="col">
-                    <h3>Automotivação</h3>
-                    <p class="text-muted">nada mais é do que persistir e se manter otimista mesmo diante de problemas;</p>
-                </div>
-                <div class="col">
-                    <h3>Empatia</h3>
-                    <p class="text-muted">habilidade de se colocar no lugar da outra pessoa</p>
-                </div>
-                <div class="col">
-                    <h3>Trabalho em equipe</h3>
-                    <p class="text-muted">Habilidade de saber a hora de ouvir e falar,trabalhar para o crescimento da equipe</p>
-                </div>
-                <div class="col">
-                    <h3>Autoconhecimento</h3>
-                    <p class="text-muted">conseguir reconhecer seus próprios sentimentos e tomar decisões que te fazem bem</p>
-                </div>
-                <div class="col">
-                    <h3>Relacionamento Interpessoal</h3>
-                    <p class="text-muted">Capacidade de se relacionar com um ou mais indivíduos</p>
-                </div>
+            <div class="colum-around">
+                <span class="round-profi">Proativo</span>
+                <span class="round-profi">Automotivação</span>
+                <span class="round-profi">Empatia</span> 
+                <span class="round-profi">Inglês</span>
+                <span class="round-profi">Ruby</span>
+                <span class="round-profi">Pacote Office</span>
+                <span class="round-profi">Bootstrap</span>
+                <span class="round-profi">Python</span>
+                <span class="round-profi">Java</span>
+                <span class="round-profi">Engenharia de Software</span> 
+                <span class="round-profi">Trabalho em equipe</span>
+                <span class="round-profi">Autoconhecimento</span>
+                <span class="round-profi">Relacionamento Interpessoal</span>
+                <span class="round-profi">Ajax</span>
+                <span class="round-profi">MySql</span>
+                <span class="round-profi">jQuery</span>
+                <span class="round-profi">Design Think</span>
             </div>
         </div>
     </div>
@@ -239,29 +232,26 @@
                     <h3>Chega Mais !!! vamos trocar uma ideia</h3>
                 </div>
             </div>
-            <div class="column">
-                <div class="col">
-                    <i class="fab fa-github icons"></i>
-                    <p class="text-muted">Username Turan-98 </p>
-                    <a href="https://github.com/turan-98" target="_blank"></a>
-                </div>
-                <div class="col">
-                    <i class="fab fa-telegram icons"></i>
-                    <p class="text-muted">me chama la +55 (11) 96392-7804 </p>
-                </div>
-                <div class="col">
-                    <i class="fab fa-codepen icons"></i>
-                </div>
-                <div class="col"></div>
+            <div class="row">
+                <div class="column">
+                    <div class="col-md-12">
+                       <hr>      
+                        <i class="fab fa-github icons"></i>
+                        <p class="text-muted">Username Turan-98 </p>
+                        <a href="https://github.com/turan-98" target="_blank"></a>
+                        <i class="fab fa-telegram icons"></i>
+                        <p class="text-muted">me chama la +55 (11) 96392-7804 </p>
+                    </div>
+                  </div>    
             </div>
         </div>
     </div>
     <footer class="footer-fixed">
-        <i class="fas fa-bars icon-menu"></i>
+        <i class="fas fa-bars icon-menu open_menu"></i>
     </footer>
 </body>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="application/javascript" src="js/script.js"></script>
+<script type="application/javascript" src="js/loadCss.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </html>
