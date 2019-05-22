@@ -103,57 +103,86 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body{
-    background: #2B2F50;
-}
-.nav-nav{
-  position: fixed;
-  width: 200px;
-  height: 100vh;
-  left: -200px;
-  background: #586093;
-}
-.sidebar .active{
-  left: 0;
-}
-.container-btn{
-  width: 100%;
-  display: flex;
+.o-body{
+  background: #2b2f50;
+  background: -moz-linear-gradient(top, #2b2f50 7%, #0b0f1e 45%);
+  background: -webkit-linear-gradient(top, #2b2f50 7%,#0b0f1e 45%);
+  background: linear-gradient(to bottom, #2b2f50 7%,#0b0f1e 45%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2f50', endColorstr='#0b0f1e',GradientType=0 );
 }
 .btn{
-  margin:.5rem;
   background: transparent;
   border: none;
-  width: 55%;
+  width: 17%;
+  left: 20%;
 }
-.menu-search{
-  position:relative;
-  right: -15%;
-  top:10px;
-  display:block;
-  cursor:pointer;
+.menu-btn-svg{
+  width: 55%;
 }
 .menu{
   position:relative;
-  left:-14%;
   top:10px;
   display:block;
   cursor:pointer;
 }
-.nav-ul{
-  display: flex;
-  flex-flow: row wrap;
+
+.nav-nav{
+  position: fixed;
+  width: 400px;
+  height: 100vh;
+  background: #39466A;
+  z-index: 1;
+  top: 0;
+}
+.nav-nav .active{
+  left: 0;
+}
+.nav-ul-li-a{
+  text-decoration:none;
+  color:#ddd;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing:1px;
 }
 .nav-ul-li{
-  color:#fff;
-  text-decoration:none;
-  flex-basis:200px;
+    display: flex;
+    flex-flow: column;
 }
+.nav-nav ul li{
+    list-style: none;
+    padding:15px 10px;
+}
+.card-menu{
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    margin:.2em;
+    padding: .4em;
+    -webkit-box-shadow: 2px 0px 29px -18px rgba(122,122,122,1);
+    -moz-box-shadow: 2px 0px 29px -18px rgba(122,122,122,1);
+    box-shadow: 2px 0px 29px -18px rgba(122,122,122,1);
+    background: #fff;
+    width: 15vh;
+}
+.control-menu{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    height: 12vh;
+    width: 55vh;
+}
+.control-user{
+     width: 10%;
+}
+.control-back{
+    width: 8%;
+}
+
 @media only screen and(max-width:768px){
   .nav-nav{
     flex-direction:column;
   }
-  }
+}
 
 .nav-brand{
   margin:1rem;
@@ -168,22 +197,21 @@ body{
   color:#586093;
 }
 .main-card{
-    background: #586093;
-	  -webkit-border-radius:5px;
-	  -moz-border-radius:5px;
-	  border-radius:5px;
-	  margin:1rem;
+    background: #39466A;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    margin:1rem;
     padding: .8rem;
-	  height: 100%;
-  	-webkit-box-shadow: 2px 0px 29px -18px rgba(122,122,122,1);
-  	-moz-box-shadow: 2px 0px 29px -18px rgba(122,122,122,1);
-  	box-shadow: 2px 0px 29px -18px rgba(122,122,122,1);
+    height: 50vmim;
+    -webkit-box-shadow: 2px 0px 29px -18px rgba(122,122,122,1);
+    -moz-box-shadow: 2px 0px 29px -18px rgba(122,122,122,1);
+    box-shadow: 2px 0px 29px -18px rgba(122,122,122,1);
 }
 .main-card{
     display: flex;
     flex-flow: column;
 }
-
 .section-svg{
   width: 15%;
 }
@@ -193,7 +221,7 @@ body{
 .section-line{
     width: 100%;
     position: relative;
-    border-bottom: 1px solid #39466A;
+    border-bottom: 1px solid #586093;
 }
 .text-light{
   margin:.5em;
@@ -201,11 +229,15 @@ body{
   font-weight: 500;
 }
 .a-section-next{
-  width: 40%;
+  position: absolute;
   border: none;
   background: none;
-  margin:.5em;
+  left: 70%;
+  margin: .8rem;
   text-decoration: none;
+}
+.a-section-next > img{
+  width: 15%;
 }
 .btn-section-svg{
   margin-left: 31%;
@@ -217,20 +249,12 @@ body{
 .card-section{
     margin: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.fixed-footer{
+  bottom: 0;
+  position: fixed;
+  height: 20%;
+  background:
+}
  /* ==========================================================================
    Helper classes
    ========================================================================== */
