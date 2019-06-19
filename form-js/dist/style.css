@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+HK:100,400&display=swap");
+body {
+  font-family: "Noto Sans HK", sans-serif;
+  background: #080f25;
+}
+
+.header {
+  color: #fff;
+  padding: 2rem;
+}
+
+.o-main {
+  display: flex;
+  justify-content: center;
+}
+
+.blob {
+  position: absolute;
+  top: 0;
+  left: 42%;
+  width: 75vmin;
+  fill: #fc2f70;
+  z-index: -1;
+}
+
+.form_wrapper {
+  margin: 8px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  height: 60vmin;
+  width: 40vmin;
+  display: flex;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #fff;
+  flex-flow: column wrap;
+  padding: 1.25em;
+}
+
+.form_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+div {
+  position: relative;
+  margin: 0.5em;
+}
+
+.form_input_line {
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-weight: 100;
+  border-bottom-color: rgba(61, 239, 255, 0.2);
+}
+.form_input_line:focus {
+  outline: none;
+}
+.form_input_line::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #3cefff;
+  transform-origin: bottom right;
+  transform: scalex(0);
+  transition: transform 0.5s ease;
+}
+
+.form_input_line:focus ~ span {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.form_send {
+  margin: 0.3125em;
+  margin-top: 1.25em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0.375em;
+  cursor: pointer;
+  transition: color .4s ease-in-out;
+}
+
+.cancel {
+  background: transparent;
+  border: 1px solid graytext;
+  color: graytext;
+  transition: .8s;
+}
+.cancel:hover {
+  color: white;
+  border: 1px solid #fc2f70;
+  background: #fc2f70;
+}
+
+.form_label {
+  margin: 0.5em;
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:100,400&display=swap');
+$font-family:'Noto Sans HK', sans-serif;
+$color-form:#fff;
+@mixin radius($radius){
+  -webkit-border-radius:$radius;
+  -moz-border-radius:$radius;
+  border-radius:$radius;
+}
+body{
+  font-family:$font-family;
+  background:#080f25;
+}
+.header{
+  color:$color-form;
+  padding:2rem;
+}
+.o-main{
+  display:flex;
+  justify-content:center;
+}
+@function pxToRem($pxNumber){
+  $retorno: $pxNumber/16;
+  @return $retorno;
+}
+
+.blob{
+  position:absolute;
+  top:0;
+  left:42%;
+  width:75vmin;
+  fill:#fc2f70;
+  z-index:-1;
+}
+.form_wrapper{
+  margin:8px;
+  @include radius(15px);
+  height:60vmin;
+  width:40vmin;
+  display:flex;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  color:$color-form;
+  flex-flow:column wrap;
+  padding:pxToRem(20em);
+}
+.form_row{
+  display:flex;
+  justify-content:space-between;
+}
+div{
+  position:relative;
+  margin:pxToRem(8em);
+}
+.form_input_line{
+  font-family:inherit;
+  color:inherit;
+  background-color:transparent;
+  border:1px solid transparent;
+  font-weight:100;
+  border-bottom-color: hsla(185, 100%, 62%, 0.2);
+  &:focus{
+    outline:none;
+  }
+  &::placeholder{
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+}
+span{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height:1px;
+  background-color: #3cefff;
+  transform-origin:bottom right;
+  transform:scalex(0);
+  transition:transform 0.5s ease;
+}
+.form_input_line:focus ~ span{
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+.form_send{
+  margin:pxToRem(5em);
+  margin-top:pxToRem(20em);
+  @include radius(4px);
+  padding:pxToRem(6em);
+  cursor:pointer;
+  transition:color .4s ease-in-out;
+}
+.cancel{
+  background:transparent;
+  border:1px solid graytext;
+  color:graytext;
+  transition:.8s;
+  &:hover{
+    color:white;
+    border:1px solid #fc2f70;
+    background:#fc2f70;
+  }
+}
+.form_label{
+  margin:pxToRem(8em);
+}
